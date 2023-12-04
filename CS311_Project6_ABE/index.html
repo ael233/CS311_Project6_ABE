@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bellarmine Financials - Balance Sheet Calculator</title>
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    </head>
+
+    <body>
+        <header id="header">
+            <h2>Bellarmine Financials - Balance Sheet Calculator</h2>
+        </header>
+       
+        <main id="main-content">
+            <div class="column assets">
+                <div class="header-row">
+                    <h3>Assets</h3>
+                </div>
+                    <div class="sub-section">
+                        <p><b>Current Assets</b></p>
+                        <button class="add-button" data-section="assets" data-fieldName="newAsset">Add Current Assets</button>
+                        <br>
+                        <p><b>Investment Property & Equipment</b></p>
+                        <button class="add-button" data-section="assets" data-fieldName="newInvestment">Add Investment Property & Equipment</button>
+                        <br>
+                        <p><b>Intangibles</b></p>
+                        <button class="add-button" data-section="assets" data-fieldName="newIntangible">Add Intangibles</button>
+
+                    </div>
+            </div>
+
+            <div class="column liabilities">
+                <div class="header-row">
+                    <h3>Liabilities</h3>
+                </div>
+                    <div class="sub-section">
+                        <p><b>Current Liabilities</b></p>
+                        <button class="add-button" data-section="liabilities" data-fieldName="newLiability">Add Current Liabilities</button>
+                        <br>
+
+                        <p><b>Long-Term Liabilities</b></p>
+                        <button class="add-button" data-section="liabilities" data-fieldName="newLongTermLiability">Add Long-Term Liabilities</button>
+                        </br></br></br>
+                        <h2>Total Position</h2>
+                        <button class="calculate-position">Calculate Position</button>
+                        <br>
+
+                        <h3>Total Assets: <span id="totalAssetsDisplay">0</span></h3>
+                        <h3>Total Liabilities: <span id="totalLiabilitiesDisplay">0</span></h3>
+                        <h3>Position: <span id="positionDisplay">0</span></h3>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+        <footer class="flex-container">
+            <p>&copy; Bellarmine University 2022</p>
+        </footer>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
